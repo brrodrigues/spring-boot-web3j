@@ -8,7 +8,7 @@ Tecnologia envolvidas:
 * Spring Boot 2.0 (http://start.spring.io/)
 * Ganache (http://truffleframework.com/ganache/)
 * Git
-* Web3j (https://web3j.io/)
+* Web3j  - API Dapps ethereum java (https://web3j.io/)
 * Maven 
 
 ## Prerequisitos
@@ -18,7 +18,7 @@ Tecnologia envolvidas:
 Digite no terminal git:
 
 ```
-https://github.com/brrodrigues/spring-boot-ethereum-blockchain.git
+git clone - https://github.com/brrodrigues/spring-boot-ethereum-blockchain.git
 cd spring-boot-ethereum-blockchain/
 ```
 
