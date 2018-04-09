@@ -1,0 +1,7 @@
+#Para especificar um endereço habilite a linha abaixo
+#URL padrao ao utilizar o ganache
+app:
+  http:
+    service:
+      web3j:
+        url: http://127.0.0.1:7545
