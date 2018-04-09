@@ -4,4 +4,4 @@ app:
   http:
     service:
       web3j:
-        url: http://127.0.0.1:7545
+        url: ${ETHEREUM_RPC_SERVICE:http://127.0.0.1:7545}
