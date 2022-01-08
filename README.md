@@ -1,4 +1,4 @@
-# Spring Boot Ethereum Blockchain - Java 
+# Connecting to Ethereum Blockchain on Spring boot - Java 
 
 This project is a web3j implementation example written by Java
 
