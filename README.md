@@ -1,37 +1,38 @@
 # Spring Boot Ethereum Blockchain - Java 
 
-Este projeto e um exemplo de implementacao de web3j para a tecnologia Java.
+This project is a web3j implementation example written by Java
 
-Tecnologia envolvidas:
+Tecnologies:
 
 * Java 8
 * Spring Boot 2.0 (http://start.spring.io/)
-* Ganache (http://truffleframework.com/ganache/)
+* Ganache as private ethereum network (http://truffleframework.com/ganache/)
 * Git
-* Web3j  - API Dapps ethereum java (https://web3j.io/)
-* Maven 
+* Web3j - API Dapps ethereum java (https://web3j.io/)
+* Maven
 
-## Prerequisitos
-É necessario possuir o git e maven instalado na maquina local. Os comando que utilizaremos abaixo, serao executado em um ambiente Linux.
+## Requirements:
+Must have maven and git installed on your PC. Do perform the commands above preferrable on linux or mac environment.
 
-## Baixando o projeto com Git
-Digite no terminal git:
+## Getting started
+Type on terminal:
 
 ```
 git clone - https://github.com/brrodrigues/spring-boot-ethereum-blockchain.git
 cd spring-boot-ethereum-blockchain/
 ```
 
-## Compilando/Executando o projeto com Maven
+## Running
 ```
 mvn spring-boot:run -DETHEREUM_RPC_SERVICE=http://127.0.0.1:7545
 ```
-**Nota 1:** Para este teste inicial, utilizaremos o programa chamado ganache para criar um rede ethereum privada para fins de teste, pois nao e necessario mais nenhuma instalação. Caso o parametro ETHEREUM_RPC_SERVICE não for especificado, a URL a ser utilizado será http://localhost:8545/. Se estiver utilizando uma rede privado diferente da criada pela rede do ganache, é necessário substituir na variável ETHEREUM_RPC_SERVICE.
+**Note:** For this initiative, we will use the Ganache App (https://trufflesuite.com/ganache/) to create our local ethereum network. 
+**Note 1: Whether the ETHEREUM_RPC_SERVICE parameter is not settled, the application will use http://localhost:8545/ as default URL to connect the ethereum network. If you use another private network create from Ganache, it is necessary to set ETHEREUM_RPC_SERVICE variable.
 
-## Endpoint
+## Endpoints
 
 ### Accounts
-Exemplo de listagem de contas existentes da rede.
+Example of account list.
 
 GET http://localhost:8080/accounts
 ```
@@ -52,7 +53,7 @@ response
 ```
 
 ### Send Transaction
-Envio de valores, via api
+Create a transaction to network
 
 POST http://localhost:8080/accounts
 ```
@@ -68,5 +69,3 @@ response
   0xcd32944333782f56589bb45132bd92f6d40057b8bc36254a307e6a4a031b10c9
 }
 ```
-
-**Nota:** Os endpoints acima ilustram o exemplo das request e response existentes.
